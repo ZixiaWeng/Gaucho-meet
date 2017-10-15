@@ -1,0 +1,299 @@
+DetailTableViewCell.swift
+	class DetailTableViewCell: UITableViewCell
+	@IBOutlet weak var detailLeft: UILabel!
+	@IBOutlet weak var detailRight: UILabel!
+	override func awakeFromNib()
+	override func setSelected(selected: Bool, animated: Bool)
+	func setDetailCell(leftTitle_: String, rightDetail_: String)
+TransitionPresentationAnimator.swift
+	class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning
+	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval
+	func animateTransition(transitionContext: UIViewControllerContextTransitioning)
+Person.swift
+	class Person
+	var username: String?
+	var firstName: String?
+	var lastName: String?
+	var gender: String?
+	var role: String?
+	var gradClass: String?
+	var college: String?
+	var major: String?
+	init()
+	init(username_: String?, firstName_: String?, lastName_: String?, gender_: String?, role_: String?, gradClass_: String?, college_:String?, major_: String?)
+ProfileViewController.swift
+	class ProfileViewController: UIViewController
+	@IBOutlet weak var firstName: UILabel!
+	@IBOutlet weak var lastName: UILabel!
+	@IBOutlet weak var userName: UILabel!
+	@IBOutlet weak var userGender: UILabel!
+	@IBOutlet weak var userRole: UILabel!
+	@IBOutlet weak var userCollege: UILabel!
+	@IBOutlet weak var userClass: UILabel!
+	@IBOutlet weak var userMajor: UILabel!
+	@IBOutlet weak var userImage: UIImageView!
+	var myPersonProfile: Person!
+	var myUser:PFUser = PFUser.currentUser()
+	var myProfileImageFile:PFFile!
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	@IBAction func unwindCancelToProfile(segue:UIStoryboardSegue)
+	@IBAction func unwindSaveToProfile(segue:UIStoryboardSegue)
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+AppDelegate.swift
+	class AppDelegate: UIResponder, UIApplicationDelegate
+	var window: UIWindow?
+	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+	func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject) -> Bool
+	func applicationWillResignActive(application: UIApplication)
+	func applicationDidEnterBackground(application: UIApplication)
+	func applicationWillEnterForeground(application: UIApplication)
+	func applicationDidBecomeActive(application: UIApplication)
+	func applicationWillTerminate(application: UIApplication)
+	lazy var applicationDocumentsDirectory: NSURL =
+	lazy var managedObjectModel: NSManagedObjectModel =
+	lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? =
+	lazy var managedObjectContext: NSManagedObjectContext? =
+	func saveContext ()
+GMMapViewController.swift
+	@IBOutlet weak var mapView:MKMapView!
+	override func didReceiveMemoryWarning()
+	struct TokenHolder
+	static var token: dispatch_once_t = 0
+	func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus)
+Info.swift
+	class Info
+	var leftInfo: String
+	var rightInfo: String
+	init()
+	init(leftInfo_: String, rightInfo_: String?)
+GMEventViewAnnotationView.swift
+	class GMEventViewAnnotation: NSObject, MKAnnotation
+	var coordinate: CLLocationCoordinate2D
+	var title: String
+	var subtitle: String
+	var identifier: String
+	init( annotation: MKAnnotation!, reuseIdentifier: String!, identifier: String!)
+	func creatEventAnnotationView(mapView: MKMapView, annotation: GMEventViewAnnotation) -> MKAnnotationView!
+MainViewController.swift
+	class MainViewController: UITabBarController
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+TransitionDismissalAnimator.swift
+	class TransitionDismissalAnimator: NSObject, UIViewControllerAnimatedTransitioning
+	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval
+	func animateTransition(transitionContext: UIViewControllerContextTransitioning)
+EditProfileViewController.swift
+	class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource, UITableViewDelegate
+	@IBOutlet weak var editProfileTableView: UITableView!
+	@IBOutlet weak var genderSelection: UISegmentedControl!
+	@IBOutlet weak var roleSelection: UISegmentedControl!
+	@IBOutlet weak var editProfileImage: UIImageView!
+	@IBOutlet weak var firstNameLabel: UILabel!
+	@IBOutlet weak var lastNameLabel: UILabel!
+	@IBOutlet weak var lastNameTextField: UITextField!
+	@IBOutlet weak var firstNameTextField: UITextField!
+	var myPersonEditProfile: Person!
+	var arrayOfInfo: [Info] = []
+	var myUser = PFUser.currentUser()
+	var myEditProfileImageFile:PFFile!
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	@IBAction func unwindToEditProfile(segue:UIStoryboardSegue)
+	@IBAction func cancelButton(sender: AnyObject)
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+	@IBAction func imageSelection(sender: UIButton)
+	func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!)
+	func scaleImageWidth(image:UIImage, and newSize:CGSize)->UIImage
+	@IBAction func genderButton(sender: UISegmentedControl)
+	@IBAction func roleButton(sender: UISegmentedControl)
+	override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+GMProfileTableViewCell.swift
+	class GMProfileTableViewCell: UITableViewCell
+	@IBOutlet weak var userNameLabel: UILabel!
+	@IBOutlet weak var majorLable: UILabel!
+	@IBOutlet weak var classLabel: UILabel!
+	@IBOutlet weak var profilePic: UIImageView!
+	override func awakeFromNib()
+	override func setSelected(selected: Bool, animated: Bool)
+GMCRTEventViewController.swift
+	class GMCRTEventViewController: UITableViewController
+	let TitleKey = "title"
+	let ContentKey = "content"
+	var datePickerIndexPath: NSIndexPath? = nil
+	let datePickerTag = 1
+	let kDateStartRow = 1
+	let kDateEndRow = 2
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	func hasPickerForIndexPath(indexPath: NSIndexPath) -> Bool
+	func updateDatePicker()
+	func hasInlineDatePicker() -> Bool
+	func indexPathHasPicker(indexPath: NSIndexPath) -> Bool
+	func indexPathHasDate(indexPath: NSIndexPath) -> Bool
+	override func numberOfSectionsInTableView(tableView: UITableView) -> Int
+	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+GMLocationTableViewController.swift
+	class GMLocationTableViewController : UITableViewController, UISearchBarDelegate, UISearchDisplayDelegate
+	var buildings = [UCSB]()
+	var filteredLocations = [UCSB]()
+	override func viewDidLoad()
+	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		if tableView == se
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+		//ask for a reusab
+	func filterContentForSearchText(searchText: String, scope: String = "All") {
+		self.filteredLocat
+	func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
+		let scopes = self.
+	func searchDisplayController(controller: UISearchDisplayController!,
+		shouldReloadTableForSearchScope searchOption: Int) -> Bool {
+			let scope = self.
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+		if segue.identifie
+DetailViewController.swift
+	class DetailViewController: UITableViewController
+	@IBOutlet weak var detailTitle: UINavigationItem!
+	@IBOutlet var detailTableView: UITableView!
+	var myPersonDetailProfile: Person!
+	var typeOfDetail : String = ""
+	var arrayOfDetail : [Info] = []
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	func changeInfo(leftInfo_: String, rightInfo_: String)
+	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+	func changePersonInfo (leftChange_: String, rightChange_: String, myPerson_: Person)
+	func buildClassArray()
+	func buildCollegeArray()
+	func buildMajorArray()
+TransitionDelegate.swift
+	class TransitionDelegate: NSObject, UIViewControllerTransitioningDelegate
+	func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning?
+	func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning?
+HomeViewController.swift
+	class HomeViewController: UIViewController
+	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var segmentedConrtol: UISegmentedControl!
+	@IBOutlet weak var mapView: UIView!
+	let locationManager = CLLocationManager()
+	var query = PFQuery(className:"eventDemo")
+	var entries = 0
+	var dataArray: NSMutableArray = []
+	var refreshControl: UIRefreshControl!
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	@IBAction func unwindToHome(segue:UIStoryboardSegue)
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
+	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+	func updateTableView()
+	func refresh(sender:AnyObject)
+	@IBAction func ViewChanged(sender: UISegmentedControl)
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+ProfileNavigationController.swift
+	class ProfileNavigationController: UINavigationController
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+GMEvetnTypePickerView.swift
+	class GMEvetnTypePickerView: UIPickerView
+	var rowsOfComponent1 = 3
+	var rowsOfComponent2 = 2
+	override func  numberOfRowsInComponent(component: Int) -> Int
+	override func selectRow(row: Int, inComponent component: Int, animated: Bool)
+RightDetailTableViewCell.swift
+	class RightDetailTableViewCell: UITableViewCell
+	@IBOutlet weak var infoRight: UILabel!
+	@IBOutlet weak var infoLeft: UILabel!
+	override func awakeFromNib()
+	override func setSelected(selected: Bool, animated: Bool)
+	func setRightDetailCell(leftTitle_: String, rightDetail_: String)
+SignUpViewController.swift
+	class SignUpViewController: UIViewController, UITextFieldDelegate
+	@IBOutlet weak var userName: UITextField!
+	@IBOutlet weak var emailField: UITextField!
+	@IBOutlet weak var passWord: UITextField!
+	@IBOutlet weak var passWord2: UITextField!
+	@IBOutlet weak var userGroup: UISegmentedControl!
+	@IBOutlet weak var signupbutton: UIButton!
+	@IBOutlet weak var profilePictureAddbuttton: UIButton!
+	@IBOutlet weak var loginViewSignupTabbar: UINavigationBar!
+	var container: UIView = UIView()
+	var loadingView: UIView = UIView()
+	var loginActivityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+	var userGroups = ["stu", "fct"]
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	override func viewWillDisappear(animated: Bool)
+	func textFieldShouldReturn(textField: UITextField) -> Bool
+	@IBAction func SignupButton(sender: AnyObject)
+	func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor
+	override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+GMEventTableViewCell.swift
+	class GMEventTableViewCell: UITableViewCell
+	@IBOutlet weak var eventTitleLabel: UILabel!
+	@IBOutlet weak var eventDescLabel: UILabel!
+	override func awakeFromNib()
+	override func setSelected(selected: Bool, animated: Bool)
+ResetPWViewController.swift
+	class ResetetPWViewController: UIViewController, UITextFieldDelegate
+	@IBOutlet weak var newpasswordbutton: UIButton!
+	@IBOutlet weak var resetPasswordNavigationbar: UINavigationBar!
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	override func viewWillDisappear(animated: Bool)
+	@IBOutlet var emailAddress: UITextField!
+	func textFieldShouldReturn(textField: UITextField) -> Bool
+	var container: UIView = UIView()
+	var loadingView: UIView = UIView()
+	var loginActivityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+	@IBAction func requestNewPW(sender: UIButton)
+	func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor
+	func requestNewPWBG()
+	override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+MoreViewController.swift
+	class MoreViewController: UIViewController
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	@IBAction func logoutButton(sender: AnyObject)
+GMDetailEventViewController.swift
+	override func viewDidLoad()
+Search.swift
+	struct UCSB
+	let category : String
+	let name : String
+	let coordinates : CLLocation
+LoginViewController.swift
+	class LoginViewController: UIViewController,FBLoginViewDelegate, UITextFieldDelegate
+	@IBOutlet weak var loginbutton: UIButton!
+	@IBOutlet weak var signupbutton: UIButton!
+	@IBOutlet weak var forgotpasswordbutton: UIButton!
+	@IBOutlet weak var usernameField: UITextField!
+	@IBOutlet weak var passwordField: UITextField!
+	var container: UIView = UIView()
+	var loadingView: UIView = UIView()
+	var loginActivityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+	@IBOutlet var fbLoginView : FBLoginView!
+	let viewTransitionDelegate = TransitionDelegate()
+	override func viewDidLoad()
+	override func didReceiveMemoryWarning()
+	override func viewWillDisappear(animated: Bool)
+	@IBAction func unwindToLogin(segue:UIStoryboardSegue)
+	@IBAction func loginButton(sender: AnyObject)
+	func textFieldShouldReturn(textField: UITextField) -> Bool
+	func login()
+	func showActivityIndicator()
+	func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+	func loginViewShowingLoggedInUser(loginView : FBLoginView!)
+	func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser)
+	func loginViewShowingLoggedOutUser(loginView : FBLoginView!)
+	func loginView(loginView : FBLoginView!, handleError:NSError)
+	override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+	func keyboardWillShow(sender: NSNotification)
+	func keyboardWillHide(sender: NSNotification)

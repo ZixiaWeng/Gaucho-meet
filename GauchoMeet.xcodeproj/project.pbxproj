@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F0BBFDC1A05883200C30AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0BBFDB1A05883200C30AA3 /* AppDelegate.swift */; };
+		2F0BBFDF1A05883200C30AA3 /* GauchoMeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F0BBFDD1A05883200C30AA3 /* GauchoMeet.xcdatamodeld */; };
+		2F0BBFE81A05883200C30AA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BBFE71A05883200C30AA3 /* Images.xcassets */; };
+		2F0BBFF71A05883200C30AA3 /* GauchoMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0BBFF61A05883200C30AA3 /* GauchoMeetTests.swift */; };
+		2F2D378D1A971768003610B1 /* GMLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D378C1A971768003610B1 /* GMLocationTableViewCell.swift */; };
+		2F44EA981A9300A500047BF7 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EA951A9300A500047BF7 /* TransitionDelegate.swift */; };
+		2F44EA991A9300A500047BF7 /* TransitionDismissalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EA961A9300A500047BF7 /* TransitionDismissalAnimator.swift */; };
+		2F44EA9A1A9300A500047BF7 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EA971A9300A500047BF7 /* TransitionPresentationAnimator.swift */; };
+		2F44EAA71A9300F900047BF7 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAA31A9300F900047BF7 /* LoginStoryboard.storyboard */; };
+		2F44EAA81A9300F900047BF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAA41A9300F900047BF7 /* LoginViewController.swift */; };
+		2F44EAA91A9300F900047BF7 /* ResetPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAA51A9300F900047BF7 /* ResetPWViewController.swift */; };
+		2F44EAAA1A9300F900047BF7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAA61A9300F900047BF7 /* SignUpViewController.swift */; };
+		2F44EAB11A93016800047BF7 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAAB1A93016800047BF7 /* back.jpg */; };
+		2F44EAB21A93016800047BF7 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAAC1A93016800047BF7 /* back2.png */; };
+		2F44EAB31A93016800047BF7 /* gauchoMeetLaunchbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAAD1A93016800047BF7 /* gauchoMeetLaunchbackground.png */; };
+		2F44EAB41A93016800047BF7 /* gauchoMeetLaunchbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAAE1A93016800047BF7 /* gauchoMeetLaunchbg.jpg */; };
+		2F44EAB61A93016800047BF7 /* uc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAB01A93016800047BF7 /* uc.jpg */; };
+		2F44EAB91A9301D100047BF7 /* GMActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAB81A9301D100047BF7 /* GMActivityView.m */; };
+		2F44EABD1A93020000047BF7 /* GMStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EABC1A93020000047BF7 /* GMStoryboardViewController.m */; };
+		2F44EACD1A93036400047BF7 /* GMCRTEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EACC1A93036400047BF7 /* GMCRTEventTableViewController.m */; };
+		2F44EAD11A93036F00047BF7 /* GMEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EACE1A93036F00047BF7 /* GMEventTableViewCell.swift */; };
+		2F44EAD21A93036F00047BF7 /* GMEventViewAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EACF1A93036F00047BF7 /* GMEventViewAnnotationView.swift */; };
+		2F44EAD31A93036F00047BF7 /* GMEvetnTypePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAD01A93036F00047BF7 /* GMEvetnTypePickerView.swift */; };
+		2F44EAD61A93037E00047BF7 /* GMDetailEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAD41A93037E00047BF7 /* GMDetailEventViewController.swift */; };
+		2F44EAD71A93037E00047BF7 /* GMMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAD51A93037E00047BF7 /* GMMapViewController.swift */; };
+		2F44EADA1A9303AF00047BF7 /* GMLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAD81A9303AF00047BF7 /* GMLocationTableViewController.swift */; };
+		2F44EADB1A9303AF00047BF7 /* GMLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44EAD91A9303AF00047BF7 /* GMLocations.swift */; };
+		2F44EAE01A93129600047BF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BBFE91A05883200C30AA3 /* LaunchScreen.xib */; };
+		2F44EAE31A93133100047BF7 /* LoginIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F44EAE21A93133100047BF7 /* LoginIcon.png */; };
+		2F4FF5681A996BC6002F936B /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4FF5671A996BC6002F936B /* ResultsTableController.swift */; };
+		2F6DB7AF1A86DF5200EC7B64 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6DB7AE1A86DF5200EC7B64 /* Bolts.framework */; };
+		2F7BEE201A9662C80013D125 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7BEE1F1A9662C80013D125 /* PassKit.framework */; };
+		2F8897C61A20653900668636 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8897971A20653900668636 /* FacebookSDK.framework */; };
+		2F8897C71A20653900668636 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8897991A20653900668636 /* FBAudienceNetwork.framework */; };
+		2F8897C81A20653900668636 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F88979A1A20653900668636 /* README.txt */; };
+		2FA5E4631A7768D10021C47B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E4611A7768D10021C47B /* Main.storyboard */; };
+		2FB8EFD71A54BB11004C77B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8EFD51A54BB11004C77B7 /* HomeViewController.swift */; };
+		2FBFF0F91A586F30004DDBF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E541A4FCC40005AEDD9 /* CoreLocation.framework */; };
+		2FCE95611A95C0AD00071910 /* GMProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE95601A95C0AD00071910 /* GMProfileTableViewCell.swift */; };
+		2FDDBAC41A89B1D9002371B6 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBABA1A89B1D9002371B6 /* DetailTableViewCell.swift */; };
+		2FDDBAC51A89B1D9002371B6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBABB1A89B1D9002371B6 /* DetailViewController.swift */; };
+		2FDDBAC61A89B1D9002371B6 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBABC1A89B1D9002371B6 /* EditProfileViewController.swift */; };
+		2FDDBAC71A89B1D9002371B6 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBABD1A89B1D9002371B6 /* Info.swift */; };
+		2FDDBAC81A89B1D9002371B6 /* defaultProfileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDDBABE1A89B1D9002371B6 /* defaultProfileImage.png */; };
+		2FDDBAC91A89B1D9002371B6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBABF1A89B1D9002371B6 /* Person.swift */; };
+		2FDDBACB1A89B1D9002371B6 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDDBAC11A89B1D9002371B6 /* ProfileStoryboard.storyboard */; };
+		2FDDBACC1A89B1D9002371B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBAC21A89B1D9002371B6 /* ProfileViewController.swift */; };
+		2FDDBACD1A89B1D9002371B6 /* RightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDBAC31A89B1D9002371B6 /* RightDetailTableViewCell.swift */; };
+		2FDE3D8E1A515531007DC99E /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE3D8D1A515531007DC99E /* MoreViewController.swift */; };
+		2FDE3D901A515631007DC99E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE3D8F1A515631007DC99E /* MainViewController.swift */; };
+		2FE81E491A4FCAD8005AEDD9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E481A4FCAD8005AEDD9 /* Parse.framework */; };
+		2FE81E4D1A4FCC06005AEDD9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E4C1A4FCC06005AEDD9 /* Accounts.framework */; };
+		2FE81E4F1A4FCC24005AEDD9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E4E1A4FCC24005AEDD9 /* AudioToolbox.framework */; };
+		2FE81E511A4FCC2C005AEDD9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E501A4FCC2C005AEDD9 /* CFNetwork.framework */; };
+		2FE81E531A4FCC37005AEDD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E521A4FCC37005AEDD9 /* CoreGraphics.framework */; };
+		2FE81E571A4FCC4C005AEDD9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E561A4FCC4C005AEDD9 /* MobileCoreServices.framework */; };
+		2FE81E591A4FCC53005AEDD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E581A4FCC53005AEDD9 /* QuartzCore.framework */; };
+		2FE81E5B1A4FCC58005AEDD9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E5A1A4FCC58005AEDD9 /* Security.framework */; };
+		2FE81E5D1A4FCC5D005AEDD9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E5C1A4FCC5D005AEDD9 /* Social.framework */; };
+		2FE81E5F1A4FCC70005AEDD9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E5E1A4FCC70005AEDD9 /* SystemConfiguration.framework */; };
+		2FE81E611A4FCC76005AEDD9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E601A4FCC76005AEDD9 /* libz.dylib */; };
+		2FE81E631A4FCC7E005AEDD9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE81E621A4FCC7E005AEDD9 /* libsqlite3.dylib */; };
+		38C6A9AA1A99AEA4006A4FA5 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6A9A91A99AEA4006A4FA5 /* FriendsListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F0BBFF11A05883200C30AA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F0BBFCE1A05883100C30AA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F0BBFD51A05883200C30AA3;
+			remoteInfo = GauchoMeet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F0BBFD61A05883200C30AA3 /* GauchoMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GauchoMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0BBFDB1A05883200C30AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F0BBFDE1A05883200C30AA3 /* GauchoMeet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GauchoMeet.xcdatamodel; sourceTree = "<group>"; };
+		2F0BBFE71A05883200C30AA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2F0BBFEA1A05883200C30AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2F0BBFF01A05883200C30AA3 /* GauchoMeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GauchoMeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0BBFF51A05883200C30AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0BBFF61A05883200C30AA3 /* GauchoMeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GauchoMeetTests.swift; sourceTree = "<group>"; };
+		2F2D26961A20222100C21BC6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2F2D378C1A971768003610B1 /* GMLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMLocationTableViewCell.swift; path = GauchoMeet/Event/GMLocationTableViewCell.swift; sourceTree = "<group>"; };
+		2F44EA951A9300A500047BF7 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionDelegate.swift; path = GauchoMeet/Login/TransitionDelegate.swift; sourceTree = "<group>"; };
+		2F44EA961A9300A500047BF7 /* TransitionDismissalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionDismissalAnimator.swift; path = GauchoMeet/Login/TransitionDismissalAnimator.swift; sourceTree = "<group>"; };
+		2F44EA971A9300A500047BF7 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionPresentationAnimator.swift; path = GauchoMeet/Login/TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
+		2F44EAA31A9300F900047BF7 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LoginStoryboard.storyboard; path = GauchoMeet/Login/LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		2F44EAA41A9300F900047BF7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = GauchoMeet/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		2F44EAA51A9300F900047BF7 /* ResetPWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPWViewController.swift; path = GauchoMeet/Login/ResetPWViewController.swift; sourceTree = "<group>"; };
+		2F44EAA61A9300F900047BF7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = GauchoMeet/Login/SignUpViewController.swift; sourceTree = "<group>"; };
+		2F44EAAB1A93016800047BF7 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back.jpg; path = "Supporting Files/Images/back.jpg"; sourceTree = "<group>"; };
+		2F44EAAC1A93016800047BF7 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back2.png; path = "Supporting Files/Images/back2.png"; sourceTree = "<group>"; };
+		2F44EAAD1A93016800047BF7 /* gauchoMeetLaunchbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gauchoMeetLaunchbackground.png; path = "Supporting Files/Images/gauchoMeetLaunchbackground.png"; sourceTree = "<group>"; };
+		2F44EAAE1A93016800047BF7 /* gauchoMeetLaunchbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gauchoMeetLaunchbg.jpg; path = "Supporting Files/Images/gauchoMeetLaunchbg.jpg"; sourceTree = "<group>"; };
+		2F44EAB01A93016800047BF7 /* uc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = uc.jpg; path = "Supporting Files/Images/uc.jpg"; sourceTree = "<group>"; };
+		2F44EAB71A9301D100047BF7 /* GMActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMActivityView.h; path = "Supporting Files/GMActivityView.h"; sourceTree = "<group>"; };
+		2F44EAB81A9301D100047BF7 /* GMActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMActivityView.m; path = "Supporting Files/GMActivityView.m"; sourceTree = "<group>"; };
+		2F44EABA1A93020000047BF7 /* GMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGlobalConstants.h; path = "Supporting Files/GMGlobalConstants.h"; sourceTree = "<group>"; };
+		2F44EABB1A93020000047BF7 /* GMStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMStoryboardViewController.h; path = "Supporting Files/GMStoryboardViewController.h"; sourceTree = "<group>"; };
+		2F44EABC1A93020000047BF7 /* GMStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMStoryboardViewController.m; path = "Supporting Files/GMStoryboardViewController.m"; sourceTree = "<group>"; };
+		2F44EACB1A93036400047BF7 /* GMCRTEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMCRTEventTableViewController.h; path = GauchoMeet/Event/GMCRTEventTableViewController.h; sourceTree = "<group>"; };
+		2F44EACC1A93036400047BF7 /* GMCRTEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMCRTEventTableViewController.m; path = GauchoMeet/Event/GMCRTEventTableViewController.m; sourceTree = "<group>"; };
+		2F44EACE1A93036F00047BF7 /* GMEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMEventTableViewCell.swift; path = GauchoMeet/Event/GMEventTableViewCell.swift; sourceTree = "<group>"; };
+		2F44EACF1A93036F00047BF7 /* GMEventViewAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMEventViewAnnotationView.swift; path = GauchoMeet/Event/GMEventViewAnnotationView.swift; sourceTree = "<group>"; };
+		2F44EAD01A93036F00047BF7 /* GMEvetnTypePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMEvetnTypePickerView.swift; path = GauchoMeet/Event/GMEvetnTypePickerView.swift; sourceTree = "<group>"; };
+		2F44EAD41A93037E00047BF7 /* GMDetailEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMDetailEventViewController.swift; path = GauchoMeet/Event/GMDetailEventViewController.swift; sourceTree = "<group>"; };
+		2F44EAD51A93037E00047BF7 /* GMMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMMapViewController.swift; path = GauchoMeet/Event/GMMapViewController.swift; sourceTree = "<group>"; };
+		2F44EAD81A9303AF00047BF7 /* GMLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMLocationTableViewController.swift; path = GauchoMeet/Event/GMLocationTableViewController.swift; sourceTree = "<group>"; };
+		2F44EAD91A9303AF00047BF7 /* GMLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMLocations.swift; path = GauchoMeet/Event/GMLocations.swift; sourceTree = "<group>"; };
+		2F44EADE1A93040000047BF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		2F44EAE21A93133100047BF7 /* LoginIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoginIcon.png; path = "Supporting Files/Images/LoginIcon.png"; sourceTree = "<group>"; };
+		2F4FF5671A996BC6002F936B /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsTableController.swift; path = GauchoMeet/Event/ResultsTableController.swift; sourceTree = "<group>"; };
+		2F6DB7AE1A86DF5200EC7B64 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2F7BEE1F1A9662C80013D125 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		2F7BEE211A9662C80013D125 /* GauchoMeet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GauchoMeet.entitlements; sourceTree = "<group>"; };
+		2F8897971A20653900668636 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		2F8897991A20653900668636 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		2F88979A1A20653900668636 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		2FA5E4621A7768D10021C47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GauchoMeet/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FB8EFD51A54BB11004C77B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = GauchoMeet/HomeViewController.swift; sourceTree = "<group>"; };
+		2FCE95601A95C0AD00071910 /* GMProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMProfileTableViewCell.swift; path = GauchoMeet/Profile/GMProfileTableViewCell.swift; sourceTree = "<group>"; };
+		2FDDBABA1A89B1D9002371B6 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewCell.swift; path = GauchoMeet/Profile/DetailTableViewCell.swift; sourceTree = "<group>"; };
+		2FDDBABB1A89B1D9002371B6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2FDDBABC1A89B1D9002371B6 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		2FDDBABD1A89B1D9002371B6 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		2FDDBABE1A89B1D9002371B6 /* defaultProfileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultProfileImage.png; path = Profile/defaultProfileImage.png; sourceTree = "<group>"; };
+		2FDDBABF1A89B1D9002371B6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2FDDBAC11A89B1D9002371B6 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		2FDDBAC21A89B1D9002371B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2FDDBAC31A89B1D9002371B6 /* RightDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightDetailTableViewCell.swift; path = GauchoMeet/Profile/RightDetailTableViewCell.swift; sourceTree = "<group>"; };
+		2FDE3D8D1A515531007DC99E /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = GauchoMeet/MoreViewController.swift; sourceTree = "<group>"; };
+		2FDE3D8F1A515631007DC99E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = GauchoMeet/MainViewController.swift; sourceTree = "<group>"; };
+		2FE81E481A4FCAD8005AEDD9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2FE81E4C1A4FCC06005AEDD9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		2FE81E4E1A4FCC24005AEDD9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2FE81E501A4FCC2C005AEDD9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2FE81E521A4FCC37005AEDD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2FE81E541A4FCC40005AEDD9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2FE81E561A4FCC4C005AEDD9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2FE81E581A4FCC53005AEDD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2FE81E5A1A4FCC58005AEDD9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2FE81E5C1A4FCC5D005AEDD9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2FE81E5E1A4FCC70005AEDD9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2FE81E601A4FCC76005AEDD9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2FE81E621A4FCC7E005AEDD9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		38C6A9A91A99AEA4006A4FA5 /* FriendsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F0BBFD31A05883200C30AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE81E611A4FCC76005AEDD9 /* libz.dylib in Frameworks */,
+				2FE81E631A4FCC7E005AEDD9 /* libsqlite3.dylib in Frameworks */,
+				2F6DB7AF1A86DF5200EC7B64 /* Bolts.framework in Frameworks */,
+				2FBFF0F91A586F30004DDBF9 /* CoreLocation.framework in Frameworks */,
+				2FE81E5F1A4FCC70005AEDD9 /* SystemConfiguration.framework in Frameworks */,
+				2FE81E5D1A4FCC5D005AEDD9 /* Social.framework in Frameworks */,
+				2F7BEE201A9662C80013D125 /* PassKit.framework in Frameworks */,
+				2FE81E5B1A4FCC58005AEDD9 /* Security.framework in Frameworks */,
+				2FE81E591A4FCC53005AEDD9 /* QuartzCore.framework in Frameworks */,
+				2FE81E571A4FCC4C005AEDD9 /* MobileCoreServices.framework in Frameworks */,
+				2FE81E531A4FCC37005AEDD9 /* CoreGraphics.framework in Frameworks */,
+				2FE81E511A4FCC2C005AEDD9 /* CFNetwork.framework in Frameworks */,
+				2FE81E4F1A4FCC24005AEDD9 /* AudioToolbox.framework in Frameworks */,
+				2FE81E4D1A4FCC06005AEDD9 /* Accounts.framework in Frameworks */,
+				2F8897C61A20653900668636 /* FacebookSDK.framework in Frameworks */,
+				2FE81E491A4FCAD8005AEDD9 /* Parse.framework in Frameworks */,
+				2F8897C71A20653900668636 /* FBAudienceNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0BBFED1A05883200C30AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0BBFCD1A05883100C30AA3 = {
+			isa = PBXGroup;
+			children = (
+				2F0BBFD81A05883200C30AA3 /* GauchoMeet */,
+				2F0BBFF31A05883200C30AA3 /* GauchoMeetTests */,
+				2FE81E461A4FC9D9005AEDD9 /* Framework */,
+				2F0BBFD71A05883200C30AA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F0BBFD71A05883200C30AA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F0BBFD61A05883200C30AA3 /* GauchoMeet.app */,
+				2F0BBFF01A05883200C30AA3 /* GauchoMeetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F0BBFD81A05883200C30AA3 /* GauchoMeet */ = {
+			isa = PBXGroup;
+			children = (
+				2F7BEE211A9662C80013D125 /* GauchoMeet.entitlements */,
+				2FDDBAB51A89B122002371B6 /* Profile */,
+				2F0BBFDB1A05883200C30AA3 /* AppDelegate.swift */,
+				2F0BBFE71A05883200C30AA3 /* Images.xcassets */,
+				2F0BBFDD1A05883200C30AA3 /* GauchoMeet.xcdatamodeld */,
+				2F2D26961A20222100C21BC6 /* Bridging-Header.h */,
+				2F0BBFE91A05883200C30AA3 /* LaunchScreen.xib */,
+				2F50F6701A57802E00F53806 /* Login */,
+				2FE81E471A4FCA30005AEDD9 /* MainView */,
+				2F0BBFD91A05883200C30AA3 /* Supporting Files */,
+			);
+			path = GauchoMeet;
+			sourceTree = "<group>";
+		};
+		2F0BBFD91A05883200C30AA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FE889A71A86A492005D4AC3 /* Images */,
+				2FD58F461A6AFE8F008C2CCF /* Archive */,
+				2F44EABA1A93020000047BF7 /* GMGlobalConstants.h */,
+				2F44EABB1A93020000047BF7 /* GMStoryboardViewController.h */,
+				2F44EABC1A93020000047BF7 /* GMStoryboardViewController.m */,
+				2F44EAB71A9301D100047BF7 /* GMActivityView.h */,
+				2F44EAB81A9301D100047BF7 /* GMActivityView.m */,
+				2F44EADE1A93040000047BF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F0BBFF31A05883200C30AA3 /* GauchoMeetTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F0BBFF61A05883200C30AA3 /* GauchoMeetTests.swift */,
+				2F0BBFF41A05883200C30AA3 /* Supporting Files */,
+			);
+			path = GauchoMeetTests;
+			sourceTree = "<group>";
+		};
+		2F0BBFF41A05883200C30AA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F0BBFF51A05883200C30AA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F44EA941A93008F00047BF7 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				2F44EA951A9300A500047BF7 /* TransitionDelegate.swift */,
+				2F44EA961A9300A500047BF7 /* TransitionDismissalAnimator.swift */,
+				2F44EA971A9300A500047BF7 /* TransitionPresentationAnimator.swift */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+		2F50F6701A57802E00F53806 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F44EAA31A9300F900047BF7 /* LoginStoryboard.storyboard */,
+				2F44EAA41A9300F900047BF7 /* LoginViewController.swift */,
+				2F44EAA51A9300F900047BF7 /* ResetPWViewController.swift */,
+				2F44EAA61A9300F900047BF7 /* SignUpViewController.swift */,
+				2F44EA941A93008F00047BF7 /* Transition */,
+			);
+			name = Login;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2F6C74C11A82DCCC00EAD06D /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				2F44EACB1A93036400047BF7 /* GMCRTEventTableViewController.h */,
+				2F44EACC1A93036400047BF7 /* GMCRTEventTableViewController.m */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		2F6C74C21A82DCF500EAD06D /* Search Location */ = {
+			isa = PBXGroup;
+			children = (
+				2F4FF5671A996BC6002F936B /* ResultsTableController.swift */,
+				2F44EAD81A9303AF00047BF7 /* GMLocationTableViewController.swift */,
+				2F44EAD91A9303AF00047BF7 /* GMLocations.swift */,
+			);
+			name = "Search Location";
+			sourceTree = "<group>";
+		};
+		2F6C74C31A82DD1A00EAD06D /* PresentEvents */ = {
+			isa = PBXGroup;
+			children = (
+				2F44EAD41A93037E00047BF7 /* GMDetailEventViewController.swift */,
+				2F44EAD51A93037E00047BF7 /* GMMapViewController.swift */,
+			);
+			name = PresentEvents;
+			sourceTree = "<group>";
+		};
+		2F8897981A20653900668636 /* FBAudienceNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				2F8897991A20653900668636 /* FBAudienceNetwork.framework */,
+				2F88979A1A20653900668636 /* README.txt */,
+			);
+			path = FBAudienceNetwork;
+			sourceTree = "<group>";
+		};
+		2FA6D5E61A6B6D0C0046E2EC /* Views Elements */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE95601A95C0AD00071910 /* GMProfileTableViewCell.swift */,
+				2FDDBABA1A89B1D9002371B6 /* DetailTableViewCell.swift */,
+				2FDDBAC31A89B1D9002371B6 /* RightDetailTableViewCell.swift */,
+				2F44EACE1A93036F00047BF7 /* GMEventTableViewCell.swift */,
+				2F44EACF1A93036F00047BF7 /* GMEventViewAnnotationView.swift */,
+				2F44EAD01A93036F00047BF7 /* GMEvetnTypePickerView.swift */,
+				2F2D378C1A971768003610B1 /* GMLocationTableViewCell.swift */,
+			);
+			name = "Views Elements";
+			sourceTree = "<group>";
+		};
+		2FBDF5B31A70EE2F005A9EFF /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				2F6C74C31A82DD1A00EAD06D /* PresentEvents */,
+				2F6C74C11A82DCCC00EAD06D /* Create */,
+				2F6C74C21A82DCF500EAD06D /* Search Location */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		2FD58F461A6AFE8F008C2CCF /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Archive;
+			sourceTree = "<group>";
+		};
+		2FDDBAB51A89B122002371B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		2FDDBAB91A89B1D9002371B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2FDDBAC11A89B1D9002371B6 /* ProfileStoryboard.storyboard */,
+				2FDDBACE1A89B222002371B6 /* PresentProfile */,
+				2FDDBACF1A89B261002371B6 /* EditProfile */,
+				38C6A9A81A99AE94006A4FA5 /* Friends List */,
+				2FDDBAD01A89B759002371B6 /* Classes */,
+			);
+			name = Profile;
+			path = GauchoMeet/Profile;
+			sourceTree = "<group>";
+		};
+		2FDDBACE1A89B222002371B6 /* PresentProfile */ = {
+			isa = PBXGroup;
+			children = (
+				2FDDBAC21A89B1D9002371B6 /* ProfileViewController.swift */,
+			);
+			name = PresentProfile;
+			sourceTree = "<group>";
+		};
+		2FDDBACF1A89B261002371B6 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				2FDDBABC1A89B1D9002371B6 /* EditProfileViewController.swift */,
+				2FDDBABB1A89B1D9002371B6 /* DetailViewController.swift */,
+			);
+			name = EditProfile;
+			sourceTree = "<group>";
+		};
+		2FDDBAD01A89B759002371B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FDDBABD1A89B1D9002371B6 /* Info.swift */,
+				2FDDBABF1A89B1D9002371B6 /* Person.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2FE81E461A4FC9D9005AEDD9 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2FE81E621A4FCC7E005AEDD9 /* libsqlite3.dylib */,
+				2FE81E601A4FCC76005AEDD9 /* libz.dylib */,
+				2F6DB7AE1A86DF5200EC7B64 /* Bolts.framework */,
+				2FE81E5E1A4FCC70005AEDD9 /* SystemConfiguration.framework */,
+				2FE81E5C1A4FCC5D005AEDD9 /* Social.framework */,
+				2FE81E5A1A4FCC58005AEDD9 /* Security.framework */,
+				2FE81E581A4FCC53005AEDD9 /* QuartzCore.framework */,
+				2FE81E561A4FCC4C005AEDD9 /* MobileCoreServices.framework */,
+				2FE81E541A4FCC40005AEDD9 /* CoreLocation.framework */,
+				2FE81E521A4FCC37005AEDD9 /* CoreGraphics.framework */,
+				2FE81E501A4FCC2C005AEDD9 /* CFNetwork.framework */,
+				2FE81E4E1A4FCC24005AEDD9 /* AudioToolbox.framework */,
+				2FE81E4C1A4FCC06005AEDD9 /* Accounts.framework */,
+				2FE81E481A4FCAD8005AEDD9 /* Parse.framework */,
+				2F7BEE1F1A9662C80013D125 /* PassKit.framework */,
+				2F8897971A20653900668636 /* FacebookSDK.framework */,
+				2F8897981A20653900668636 /* FBAudienceNetwork */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		2FE81E471A4FCA30005AEDD9 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2FA5E4611A7768D10021C47B /* Main.storyboard */,
+				2FDE3D8F1A515631007DC99E /* MainViewController.swift */,
+				2FB8EFD51A54BB11004C77B7 /* HomeViewController.swift */,
+				2FDE3D8D1A515531007DC99E /* MoreViewController.swift */,
+				2FBDF5B31A70EE2F005A9EFF /* Event */,
+				2FDDBAB91A89B1D9002371B6 /* Profile */,
+				2FA6D5E61A6B6D0C0046E2EC /* Views Elements */,
+			);
+			name = MainView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2FE889A71A86A492005D4AC3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2F44EAE21A93133100047BF7 /* LoginIcon.png */,
+				2F44EAAB1A93016800047BF7 /* back.jpg */,
+				2F44EAAC1A93016800047BF7 /* back2.png */,
+				2F44EAAD1A93016800047BF7 /* gauchoMeetLaunchbackground.png */,
+				2F44EAAE1A93016800047BF7 /* gauchoMeetLaunchbg.jpg */,
+				2F44EAB01A93016800047BF7 /* uc.jpg */,
+				2FDDBABE1A89B1D9002371B6 /* defaultProfileImage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		38C6A9A81A99AE94006A4FA5 /* Friends List */ = {
+			isa = PBXGroup;
+			children = (
+				38C6A9A91A99AEA4006A4FA5 /* FriendsListViewController.swift */,
+			);
+			name = "Friends List";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F0BBFD51A05883200C30AA3 /* GauchoMeet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0BBFFA1A05883200C30AA3 /* Build configuration list for PBXNativeTarget "GauchoMeet" */;
+			buildPhases = (
+				2F0BBFD21A05883200C30AA3 /* Sources */,
+				2F0BBFD31A05883200C30AA3 /* Frameworks */,
+				2F0BBFD41A05883200C30AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GauchoMeet;
+			productName = GauchoMeet;
+			productReference = 2F0BBFD61A05883200C30AA3 /* GauchoMeet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F0BBFEF1A05883200C30AA3 /* GauchoMeetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0BBFFD1A05883200C30AA3 /* Build configuration list for PBXNativeTarget "GauchoMeetTests" */;
+			buildPhases = (
+				2F0BBFEC1A05883200C30AA3 /* Sources */,
+				2F0BBFED1A05883200C30AA3 /* Frameworks */,
+				2F0BBFEE1A05883200C30AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F0BBFF21A05883200C30AA3 /* PBXTargetDependency */,
+			);
+			name = GauchoMeetTests;
+			productName = GauchoMeetTests;
+			productReference = 2F0BBFF01A05883200C30AA3 /* GauchoMeetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F0BBFCE1A05883100C30AA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GM;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Golden: Tyler Weimin Ouyang, Geon Lee, Zixia Weng, Manpreet Bahia";
+				TargetAttributes = {
+					2F0BBFD51A05883200C30AA3 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = F5S48SAJAU;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.OMC = {
+								enabled = 0;
+							};
+							com.apple.Passbook = {
+								enabled = 1;
+							};
+						};
+					};
+					2F0BBFEF1A05883200C30AA3 = {
+						CreatedOnToolsVersion = 6.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 2F0BBFD51A05883200C30AA3;
+					};
+				};
+			};
+			buildConfigurationList = 2F0BBFD11A05883100C30AA3 /* Build configuration list for PBXProject "GauchoMeet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F0BBFCD1A05883100C30AA3;
+			productRefGroup = 2F0BBFD71A05883200C30AA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F0BBFD51A05883200C30AA3 /* GauchoMeet */,
+				2F0BBFEF1A05883200C30AA3 /* GauchoMeetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F0BBFD41A05883200C30AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F44EAE01A93129600047BF7 /* LaunchScreen.xib in Resources */,
+				2FA5E4631A7768D10021C47B /* Main.storyboard in Resources */,
+				2FDDBACB1A89B1D9002371B6 /* ProfileStoryboard.storyboard in Resources */,
+				2F44EAA71A9300F900047BF7 /* LoginStoryboard.storyboard in Resources */,
+				2F44EAB11A93016800047BF7 /* back.jpg in Resources */,
+				2F0BBFE81A05883200C30AA3 /* Images.xcassets in Resources */,
+				2F8897C81A20653900668636 /* README.txt in Resources */,
+				2FDDBAC81A89B1D9002371B6 /* defaultProfileImage.png in Resources */,
+				2F44EAB31A93016800047BF7 /* gauchoMeetLaunchbackground.png in Resources */,
+				2F44EAE31A93133100047BF7 /* LoginIcon.png in Resources */,
+				2F44EAB61A93016800047BF7 /* uc.jpg in Resources */,
+				2F44EAB21A93016800047BF7 /* back2.png in Resources */,
+				2F44EAB41A93016800047BF7 /* gauchoMeetLaunchbg.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0BBFEE1A05883200C30AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F0BBFD21A05883200C30AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C6A9AA1A99AEA4006A4FA5 /* FriendsListViewController.swift in Sources */,
+				2FDDBAC41A89B1D9002371B6 /* DetailTableViewCell.swift in Sources */,
+				2F44EA9A1A9300A500047BF7 /* TransitionPresentationAnimator.swift in Sources */,
+				2FDDBAC91A89B1D9002371B6 /* Person.swift in Sources */,
+				2F4FF5681A996BC6002F936B /* ResultsTableController.swift in Sources */,
+				2FDDBACC1A89B1D9002371B6 /* ProfileViewController.swift in Sources */,
+				2F44EACD1A93036400047BF7 /* GMCRTEventTableViewController.m in Sources */,
+				2F0BBFDC1A05883200C30AA3 /* AppDelegate.swift in Sources */,
+				2F44EAD71A93037E00047BF7 /* GMMapViewController.swift in Sources */,
+				2FDDBAC71A89B1D9002371B6 /* Info.swift in Sources */,
+				2F2D378D1A971768003610B1 /* GMLocationTableViewCell.swift in Sources */,
+				2F44EAD21A93036F00047BF7 /* GMEventViewAnnotationView.swift in Sources */,
+				2FDE3D901A515631007DC99E /* MainViewController.swift in Sources */,
+				2F44EA991A9300A500047BF7 /* TransitionDismissalAnimator.swift in Sources */,
+				2FDDBAC61A89B1D9002371B6 /* EditProfileViewController.swift in Sources */,
+				2FCE95611A95C0AD00071910 /* GMProfileTableViewCell.swift in Sources */,
+				2F44EADA1A9303AF00047BF7 /* GMLocationTableViewController.swift in Sources */,
+				2F0BBFDF1A05883200C30AA3 /* GauchoMeet.xcdatamodeld in Sources */,
+				2F44EAB91A9301D100047BF7 /* GMActivityView.m in Sources */,
+				2FDDBAC51A89B1D9002371B6 /* DetailViewController.swift in Sources */,
+				2F44EA981A9300A500047BF7 /* TransitionDelegate.swift in Sources */,
+				2FB8EFD71A54BB11004C77B7 /* HomeViewController.swift in Sources */,
+				2F44EAD31A93036F00047BF7 /* GMEvetnTypePickerView.swift in Sources */,
+				2FDDBACD1A89B1D9002371B6 /* RightDetailTableViewCell.swift in Sources */,
+				2F44EAAA1A9300F900047BF7 /* SignUpViewController.swift in Sources */,
+				2F44EAD11A93036F00047BF7 /* GMEventTableViewCell.swift in Sources */,
+				2F44EAA91A9300F900047BF7 /* ResetPWViewController.swift in Sources */,
+				2FDE3D8E1A515531007DC99E /* MoreViewController.swift in Sources */,
+				2F44EAD61A93037E00047BF7 /* GMDetailEventViewController.swift in Sources */,
+				2F44EADB1A9303AF00047BF7 /* GMLocations.swift in Sources */,
+				2F44EAA81A9300F900047BF7 /* LoginViewController.swift in Sources */,
+				2F44EABD1A93020000047BF7 /* GMStoryboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0BBFEC1A05883200C30AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0BBFF71A05883200C30AA3 /* GauchoMeetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F0BBFF21A05883200C30AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F0BBFD51A05883200C30AA3 /* GauchoMeet */;
+			targetProxy = 2F0BBFF11A05883200C30AA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F0BBFE91A05883200C30AA3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F0BBFEA1A05883200C30AA3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2FA5E4611A7768D10021C47B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA5E4621A7768D10021C47B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F0BBFF81A05883200C30AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F0BBFF91A05883200C30AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F0BBFFB1A05883200C30AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tyler/Documents/FacebookSDK,
+					/Users/tyler/Documents/FacebookSDK/FBAudienceNetwork,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FBAudienceNetwork",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/GauchoMeet/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GauchoMeet/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2F0BBFFC1A05883200C30AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tyler/Documents/FacebookSDK,
+					/Users/tyler/Documents/FacebookSDK/FBAudienceNetwork,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FBAudienceNetwork",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/GauchoMeet/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GauchoMeet/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2F0BBFFE1A05883200C30AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GauchoMeetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GauchoMeet.app/GauchoMeet";
+			};
+			name = Debug;
+		};
+		2F0BBFFF1A05883200C30AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GauchoMeetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GauchoMeet.app/GauchoMeet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F0BBFD11A05883100C30AA3 /* Build configuration list for PBXProject "GauchoMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0BBFF81A05883200C30AA3 /* Debug */,
+				2F0BBFF91A05883200C30AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0BBFFA1A05883200C30AA3 /* Build configuration list for PBXNativeTarget "GauchoMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0BBFFB1A05883200C30AA3 /* Debug */,
+				2F0BBFFC1A05883200C30AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0BBFFD1A05883200C30AA3 /* Build configuration list for PBXNativeTarget "GauchoMeetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0BBFFE1A05883200C30AA3 /* Debug */,
+				2F0BBFFF1A05883200C30AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F0BBFDD1A05883200C30AA3 /* GauchoMeet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F0BBFDE1A05883200C30AA3 /* GauchoMeet.xcdatamodel */,
+			);
+			currentVersion = 2F0BBFDE1A05883200C30AA3 /* GauchoMeet.xcdatamodel */;
+			path = GauchoMeet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2F0BBFCE1A05883100C30AA3 /* Project object */;
+}

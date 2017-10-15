@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GMMapViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script type="text/javascript">
+    window.jazzy = {'docset': false}
+    if (typeof window.dash != 'undefined') {
+      document.documentElement.className += ' dash'
+      window.jazzy.docset = true
+    }
+    if (navigator.userAgent.match(/xcode/i)) {
+      document.documentElement.className += ' xcode'
+      window.jazzy.docset = true
+    }
+    </script>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+  </head>
+  <body id="reference" class="Swift">
+    <a name="//apple_ref/swift/Class/GMMapViewController" class="dashAnchor"></a>
+    <a title="GMMapViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p class="header-text"><a href="../index.html"> Docs</a> (6% documented)</p>
+        <p id="header-links"><a href=""><img id="header-icon" src="../img/gh.png" height="16px" width="16px" />View on GitHub</a></p>
+      </div>
+    </header>
+    <section id="valence">
+      <div class="content-wrapper">
+        <p id="hierarchial_navigation">
+        <a href="../index.html" id="design_resources_link"> Reference</a>
+        <img id="carat" src="../img/carat.png" height="10px" width="6px" />
+        GMMapViewController Class Reference
+        </p>
+      </div>
+    </section>
+    <div class="content-wrapper">
+      <nav class="book-parts">
+        <ul class="nav-parts">
+          <li class="part-name tasks">
+          <a href="../Classes.html">Classes</a>
+            <ul class="nav-chapters">
+              <li class="nav-chapter">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/DetailTableViewCell.html">DetailTableViewCell</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/DetailViewController.html">DetailViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/EditProfileViewController.html">EditProfileViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMCRTEventViewController.html">GMCRTEventViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMDetailEventViewController.html">GMDetailEventViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMEventTableViewCell.html">GMEventTableViewCell</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMEventViewAnnotation.html">GMEventViewAnnotation</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMEvetnTypePickerView.html">GMEvetnTypePickerView</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMLocationTableViewController.html">GMLocationTableViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMMapViewController.html">GMMapViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/GMProfileTableViewCell.html">GMProfileTableViewCell</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/HomeViewController.html">HomeViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/Info.html">Info</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/LoginViewController.html">LoginViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/MainViewController.html">MainViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/MoreViewController.html">MoreViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/Person.html">Person</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/ProfileNavigationController.html">ProfileNavigationController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/ProfileViewController.html">ProfileViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/ResetetPWViewController.html">ResetetPWViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/RightDetailTableViewCell.html">RightDetailTableViewCell</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/SignUpViewController.html">SignUpViewController</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/TransitionDelegate.html">TransitionDelegate</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/TransitionDismissalAnimator.html">TransitionDismissalAnimator</a>
+              </li>
+              <li class="nav-chapter">
+                <a href="../Classes/TransitionPresentationAnimator.html">TransitionPresentationAnimator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="part-name tasks">
+          <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-chapters">
+              <li class="nav-chapter">
+                <a href="../Global Variables.html#/s:v10GauchoMeet15GMDateFormatterCSo15NSDateFormatter">GMDateFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="part-name tasks">
+          <a href="../Structs.html">Structs</a>
+            <ul class="nav-chapters">
+              <li class="nav-chapter">
+                <a href="../Structs/UCSB.html">UCSB</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="pixel-line"></div>
+      <div class="rubber-band-gap"></div>
+      <article class="chapter">
+      <a name="/"></a>
+        <h1 class="chapter-name">GMMapViewController</h1>
+        <section>
+          <section class="section">
+            <p class="para">It manages user&rsquo;s location, initiates the map frame and present event annotations</p>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                
+                <a name="/Unnamed"></a>
+                
+              </div>
+              <ul class="task-group-list">
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:vC10GauchoMeet19GMMapViewController15locationManagerCSo17CLLocationManager">
+                    <a name="//apple_ref/swift/Property/locationManager" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:vC10GauchoMeet19GMMapViewController15locationManagerCSo17CLLocationManager">locationManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">A CLLicationManager taking care of user&rsquo;s current location</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">locationManager</span> <span class="o">=</span> <span class="kt">CLLocationManager</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:vC10GauchoMeet19GMMapViewController9dataArrayCSo14NSMutableArray">
+                    <a name="//apple_ref/swift/Property/dataArray" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:vC10GauchoMeet19GMMapViewController9dataArrayCSo14NSMutableArray">dataArray</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">An NSMutableArray that stores events</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dataArray</span><span class="p">:</span> <span class="kt">NSMutableArray</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:vC10GauchoMeet19GMMapViewController7mapViewXwGSQCSo9MKMapView_">
+                    <a name="//apple_ref/swift/Property/mapView" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:vC10GauchoMeet19GMMapViewController7mapViewXwGSQCSo9MKMapView_">mapView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Undocumented</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController11viewDidLoadFS0_FT_T_">
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController11viewDidLoadFS0_FT_T_">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Initializes<ul><li>locationMnager</li><li>Add self as an obsever of the default notification center</li></ul></p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController23didReceiveMemoryWarningFS0_FT_T_">
+                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController23didReceiveMemoryWarningFS0_FT_T_">didReceiveMemoryWarning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Undocumented</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <hr/>
+                <a name="/MapView"></a>
+                <a name="//apple_ref/swift/Section/MapView" class="dashAnchor"></a>
+                <a href="#/MapView">
+                  <h3 class="section-name">MapView</h3>
+                </a>
+                
+              </div>
+              <ul class="task-group-list">
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController7mapViewFS0_FTGSQCSo9MKMapView_21didUpdateUserLocationGSQCSo14MKUserLocation__T_">
+                    <a name="//apple_ref/swift/Method/mapView(_:didUpdateUserLocation:)" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController7mapViewFS0_FTGSQCSo9MKMapView_21didUpdateUserLocationGSQCSo14MKUserLocation__T_">mapView(_:didUpdateUserLocation:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Show an area on map according to user&rsquo;s current location</p>
+                        <a href="../Classes/GMMapViewController/mapView(_:didUpdateUserLocation:).html" class="see-more">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="o">!</span><span class="p">,</span> <span class="n">didUpdateUserLocation</span> <span class="nv">userLocation</span><span class="p">:</span> <span class="kt">MKUserLocation</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController7mapViewFS0_FTGSQCSo9MKMapView_17viewForAnnotationGSQCS_21GMEventViewAnnotation__GSQCSo16MKAnnotationView_">
+                    <a name="//apple_ref/swift/Method/mapView(_:viewForAnnotation:)" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController7mapViewFS0_FTGSQCSo9MKMapView_17viewForAnnotationGSQCS_21GMEventViewAnnotation__GSQCSo16MKAnnotationView_">mapView(_:viewForAnnotation:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Generates MKAnnotationView for GMEventViewAnnotation</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="o">!</span><span class="p">,</span> <span class="n">viewForAnnotation</span> <span class="nv">annotation</span><span class="p">:</span> <span class="kt">GMEventViewAnnotation</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MKAnnotationView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="parameters">
+                        <h4>Parameters</h4>
+                        <table class="graybox" border="0" cellspacing="0" cellpadding="5">
+                          <tbody>
+                            <tr>
+                              <td scope="row">
+                                <code>
+                                <em class="term">annotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div class="definition">
+                                  <p class="para">The annotaion being processed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="result-description">
+                        <h4>Return Value</h4>
+                        <p class="para">MKAnnotationView, or nil when user&rsquo;s current location is passed in</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController7mapViewFS0_FTGSQCSo9MKMapView_14annotationViewGSQCSo16MKAnnotationView_29calloutAccessoryControlTappedGSQCSo9UIControl__T_">
+                    <a name="//apple_ref/swift/Method/mapView(_:annotationView:calloutAccessoryControlTapped:)" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController7mapViewFS0_FTGSQCSo9MKMapView_14annotationViewGSQCSo16MKAnnotationView_29calloutAccessoryControlTappedGSQCSo9UIControl__T_">mapView(_:annotationView:calloutAccessoryControlTapped:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Defines the behavior when an annotation&rsquo;s accessory control button is tapped</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="o">!</span><span class="p">,</span> <span class="n">annotationView</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">MKAnnotationView</span><span class="o">!</span><span class="p">,</span> <span class="n">calloutAccessoryControlTapped</span> <span class="nv">control</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController16updateAnotationsFS0_FT_T_">
+                    <a name="//apple_ref/swift/Method/updateAnotations()" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController16updateAnotationsFS0_FT_T_">updateAnotations()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Updates anotations after an new event is created or an user triggers the refresh function</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">updateAnotations</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <hr/>
+                <a name="/LocationManagerDelegate"></a>
+                <a name="//apple_ref/swift/Section/LocationManagerDelegate" class="dashAnchor"></a>
+                <a href="#/LocationManagerDelegate">
+                  <h3 class="section-name">LocationManagerDelegate</h3>
+                </a>
+                
+              </div>
+              <ul class="task-group-list">
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController15locationManagerFS0_FTGSQCSo17CLLocationManager_28didChangeAuthorizationStatusOSC21CLAuthorizationStatus_T_">
+                    <a name="//apple_ref/swift/Method/locationManager(_:didChangeAuthorizationStatus:)" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController15locationManagerFS0_FTGSQCSo17CLLocationManager_28didChangeAuthorizationStatusOSC21CLAuthorizationStatus_T_">locationManager(_:didChangeAuthorizationStatus:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Undocumented</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <hr/>
+                <a name="/Navigation"></a>
+                <a name="//apple_ref/swift/Section/Navigation" class="dashAnchor"></a>
+                <a href="#/Navigation">
+                  <h3 class="section-name">Navigation</h3>
+                </a>
+                
+              </div>
+              <ul class="task-group-list">
+                <li class="item symbol">
+                  <div class="task-group-term">
+                    <code>
+                    <a name="/s:FC10GauchoMeet19GMMapViewController15prepareForSegueFS0_FTCSo17UIStoryboardSegue6senderGSqPSs9AnyObject___T_">
+                    <a name="//apple_ref/swift/Method/prepareForSegue(_:sender:)" class="dashAnchor"></a>
+                    <a class="x-instance-method Swift" href="#/s:FC10GauchoMeet19GMMapViewController15prepareForSegueFS0_FTCSo17UIStoryboardSegue6senderGSqPSs9AnyObject___T_">prepareForSegue(_:sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointy-thing-container"></div>
+                    <section class="section instance-method">
+                      <div class="pointy-thing"></div>
+                      <div class="abstract">
+                        <p class="para">Passes a reference of event to GMDetailEventViewController</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+            
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepareForSegue</span><span class="p">(</span><span class="nv">segue</span><span class="p">:</span> <span class="kt">UIStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p class="copyright">&copy; 2015 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2015-02-19)</p>
+          <p class="copyright">Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.1.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

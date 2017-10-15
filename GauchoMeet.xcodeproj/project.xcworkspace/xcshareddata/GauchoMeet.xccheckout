@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5A3EC0B-92F7-4A74-81AA-B65637B6927F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GauchoMeet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEF552D6D7A818E8F0A61D0D45037E27001D65AA</key>
+		<string>https://bitbucket.org/gauchos/gauchomeet_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GauchoMeet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEF552D6D7A818E8F0A61D0D45037E27001D65AA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/gauchos/gauchomeet_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEF552D6D7A818E8F0A61D0D45037E27001D65AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEF552D6D7A818E8F0A61D0D45037E27001D65AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gauchomeet_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
